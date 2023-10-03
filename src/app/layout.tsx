@@ -21,7 +21,7 @@ export default function RootLayout({
       <body
         className={`${inter.className} w-full font-mono bg-white dark:bg-black  min-h-screen  `}
       >
-        <Script key={"theme-switcher"} strategy="beforeInteractive">
+        <Script id={"theme-switcher"} strategy="beforeInteractive">
           {`if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
               document.documentElement.classList.add('dark')
             } else {
